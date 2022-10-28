@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All Products - ALIVE </title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+	   <div class="navbar">
+		<div class="logo">
+			<img src="images/logo.png" width="120px">
+       </div>
+       <nav>
+       	<ul id ="MenuItems">
+       		<li><a href="">Home</a></li>
+       		<li><a href="">About</a></li>
+       		<li><a href="">Products</a></li>
+       		<li><a href="">Contact</a></li>
+       		<li><a href="">Login/Register</a></li>
+       	</ul>
+       </nav>
+       <img src="images/cart.png" width="30px" height="30px">
+       <img src="images/menu.png" class ="menu-icon"
+        onclick="menutoggle()">
+	</div>
+</div>
+	
+<!-----single products details---->
+
+    <div class="small-container single-product">
+    	<div class="row">
+    		<div class="col-2"> 
+              <img src="images/party dress.jpeg" width="100%">
+    		</div>
+    		<div class="col-2">
+    			<p>Summer collection</p>
+    			<h1>Vintage Short Black Dress</h1>
+    			<h4>Rs1599</h4>
+    			<select>
+    				<option>Select Size</option>
+    				<option>XXL</option>
+    				<option>XL</option>
+    				<option>Large</option>
+    				<option>Medium</option>
+    				<option>Small</option>
+    			</select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add to Cart</a>
+
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <p>The Marie Black And White Floral 50s Dress is a lovely simple floral which is sleeveless and has a fitted waist and full swing skirt. </p>
+    			
+    		</div>
+    	</div>
+    </div>
+<!---------title---->
+<div class="small-container">
+    <div class="row row-2">
+    	<h2> Related Products</h2>
+    	<p> View More </p>
+
+    </div>
+</div>
+
+<!-------products------>
+
+	<div class="small-container">
+
+		<div class="row">
+		<div class="col-4">
+			<img src="images/c105.jpeg">
+			<h4> Floral summer dress </h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half"></i>
+
+			</div>
+			<p>Rs1599</p>
+		</div>
+		<div class="col-4">
+			<img src="images/c104.jpeg">
+			<h4> Sporty shirt and shorts </h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>Rs1299</p>
+		</div>
+		<div class="col-4">
+			<img src="images/Watch.jpeg" width="50%">
+			<h4> Jack klien funky wrist watch </h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half"></i>
+            </div>
+			<p>Rs1059</p>
+		</div>
+		<div class="col-4">
+			<img src="images/buy-3.jpg">
+			<h4> Comfortable track pants for men </h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>Rs859</p>
+		</div>
+	</div>
+	
+				
+            
+
+			
+<!------footer------>
+<div class ="footer">
+	<div clas="container">
+		<div class="row">
+			<div class="footer-col-1">
+			  <h3>Download Our App</h3>
+			  <p>Download App for Android And ios mobile phone.</p>
+			  <div class="app-logo">
+			 <img src="images/play-store.png">
+			 <img src="images/app-store.png">
+			</div>
+
+			  	
+			</div>
+			<div class="footer-col-2">
+				<img src="images/logo.png">
+			  <p>For all the fashion lovers ALIVE fashion is the ONE!</p>
+			</div>
+			<div class="footer-col-3">
+			  <h3>Useful Links</h3>
+			 <ul>
+			 	<li>Coupons</li>
+			 	<li>Blog Post</li>
+			 	<li>Return Policy</li>
+			 	<li>Join Affiliate</li>
+			 </ul>
+			</div>
+            <div class="footer-col-4">
+			  <h3>Follow us</h3>
+			  <ul>
+			 	<li>Facebook</li>
+			 	<li>Twitter</li>
+			 	<li>Instagram</li>
+			 	<li>You Tube</li>
+			 </ul>
+			</div>
+		</div>
+		<hr>
+		<p class="Copyright"> Copyright 2021 - Alive Fashion </p>
+    </div>
+</div>
+<!------js for toggle menu------->
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if(MenuItems.style.maxHeight = "0px")
+		{
+			MenuItems.style.maxHeight = "200px"
+		}
+		else
+		{
+			MenuItems.style.maxHeight = "0px":
+		}
+	}
+</script>
+
+
+
+
+</body>
+</html>
